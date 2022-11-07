@@ -40,7 +40,7 @@ app.set('view engine', 'ejs'); // set up ejs for templating
 
 // required for passport
 app.use(session({
-    secret: 'rcbootcamp2021b', // session secret
+    secret: 'rcbootcamp2022b', // session secret
     resave: true,
     saveUninitialized: true
 }));
@@ -50,5 +50,5 @@ app.use(flash()); // use connect-flash for flash messages stored in session
 
 
 // launch ======================================================================
-app.listen(port);
+app.listen(8080);
 console.log('The magic happens on port ' + port);
